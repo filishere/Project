@@ -1,7 +1,6 @@
 package project;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 import java.util.Date;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -65,9 +64,9 @@ public class ProjectY {
 		calendar.setBounds(450, 60, 350, 300);
 		panel.add(calendar);
 
-		JButton playButton = new JButton("Add to national Calendar");
-		playButton.setBounds(70, 250, 200, 30);
-		panel.add(playButton);
+		JButton button = new JButton("Add to national Calendar");
+		button.setBounds(70, 250, 200, 30);
+		panel.add(button);
 
 		frame.setVisible(true);
 
