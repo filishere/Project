@@ -1,4 +1,6 @@
 package project;
+import java.awt.Cursor;
+import java.awt.Desktop;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
