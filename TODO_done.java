@@ -1,4 +1,5 @@
 package project;
+import java.awt.Dimension;
 import java.awt.Cursor;
 import java.awt.Desktop;
 import javax.swing.*;
