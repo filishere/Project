@@ -67,7 +67,7 @@ public class ProjectYYY {
 		infoLabel.setBounds(120,330 , 250, 210);
 		panel.add(infoLabel);
 		infoLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
-
+              // method for hyperlink
 		goWebsite(infoLabel);
 
 		JLabel todayLabel = new JLabel("People celebrate on:                                    ");
@@ -122,6 +122,7 @@ public class ProjectYYY {
 		Border border = new LineBorder(Color.BLUE, 4, true);
 		calendar.setBorder(border);
 		
+		// scrollbar
 		JScrollPane listScroller = new JScrollPane(calendar);
 		listScroller.setPreferredSize(new Dimension(410, 350));
 		panel1.add(listScroller);
@@ -135,7 +136,8 @@ public class ProjectYYY {
 		exitButton.setBounds(70, 300, 100, 30);
 		panel.add(exitButton);
 		exitButton.setBackground(Color.GREEN);
-
+		
+		// creating file to make the saved changes visible
 		File myObj = new File("filename6.txt");
 		text = "";
 		try {
@@ -167,6 +169,7 @@ public class ProjectYYY {
 				copyText5 = fifthBox.getText();
 				text = currentDateLabel.getText() + "\n" + copyText1 + "\n" + copyText2 + "\n" + copyText3 + "\n"
 						+ copyText4 + "\n" + copyText5 + "\n";
+					// creating file to save changes after closing gui
 				try {
 					FileWriter myWriter = new FileWriter("filename6.txt", true);
 					myWriter.write(text);
@@ -219,7 +222,7 @@ public class ProjectYYY {
 
 	}
 
-
+	// method for the hyperlink
 	private static void goWebsite(JLabel infoLabel) {
 		infoLabel.addMouseListener(new MouseAdapter() {
 			@Override
